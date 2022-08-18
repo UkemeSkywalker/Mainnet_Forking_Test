@@ -8,7 +8,7 @@ async function main() {
   const amountOut = 3e6;
   const amountInMax = 6e6;
 
-  const ethAmount = ethers.utils.parseEther("4000");
+  const ethAmount = ethers.utils.parseEther("1000");
 
   const deadline = Math.floor(Date.now() / 1000) + (60 * 10);
 
@@ -32,11 +32,13 @@ async function main() {
   
   
   //  First Interaction
-  const swap = await ROUTER.swapExactETHForTokens(amountOut, [WETHAddress, DAIAddress], USDTHolder,deadline, {value: ethAmount} );
+  const swap = await ROUTER.swapExactETHForTokens(2000, [WETHAddress, DAIAddress], USDTHolder,deadline, {value: ethAmount} );
 
   const daiBal2 = await Dai.balanceOf(USDTHolder);
+  const swapResult = await swap.wait();
 
   console.log("Dai balance after Swap:", daiBal2);
+  // console.log("Swap Reciept:", swapResult);
 
   
 
