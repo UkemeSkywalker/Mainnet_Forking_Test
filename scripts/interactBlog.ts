@@ -17,6 +17,12 @@ async function main() {
 
     console.log("Blog Posted", blogResult);
 
+    const getSinglePost = await Blog.getSinglePost(1);
+    const postResult = await getSinglePost.wait();
+    console.log("Get Single Post:", postResult);
+
+
+
     // Simple Blog
     // Contract deployed to: 0xb4eA7D9bc09f5B7F5702245467493301C1ebcE0b
     // Txn Hash 1: 0x11f8b0ba198c786043338b4da7fbb36fb772f7f8a50a9b9e1bbc17586f6fc21d
