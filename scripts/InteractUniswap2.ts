@@ -29,7 +29,7 @@ async function main() {
   console.log("approval reciept", approvalResult);
   
   
-  //  First Interaction
+  //  Second Interaction
   const swap = await ROUTER.swapTokensForExactETH(1, 2000, [DAIAddress, WETHAddress], USDTHolder, deadline, {gasLimit: ethers.utils.hexlify(1000000)});
 
   const swapResult = await swap.wait();

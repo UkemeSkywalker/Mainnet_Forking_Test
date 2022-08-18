@@ -1,4 +1,17 @@
-# Sample Hardhat Project
+# Mainnet Fork Testing
+This codebase has two projects, 
+    * Uniswap mainnet forking and interaction
+    * Create simple Blog and interaction
+
+## Project Files
+
+### Uniswap mainnet forking and interaction
+
+|Folder | Filename|
+|-------|----------|
+|contracts| ```IERC20.sol, IUniswap.sol```|
+|scripts| ```InteractUniswap1.ts, InteractUniswap2.ts```|
+
 
 ## Simple Blog
 
