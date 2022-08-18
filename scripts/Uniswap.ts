@@ -36,6 +36,8 @@ async function main() {
   console.log("Dai balance befor swap :", daiBal);
 
   const approveDai = await Dai.approve(UNIRouter, amountInMax);
+  const approvalResult = await approveDai.wait();
+  console.log("approval reciept", approvalResult);
   
   
   //  First Interaction
@@ -45,7 +47,12 @@ async function main() {
 
   console.log("Dai balance after Swap:", daiBal2);
 
-  /
+  // Second interaction
+
+  const amountOut2 = 2e6;
+  const amountInMax3 = 3e6;
+
+  
 
   
 
