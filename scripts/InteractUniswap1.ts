@@ -1,15 +1,6 @@
 import { ethers } from "hardhat";
 
 async function main() {
-  //interact with uniswap swapTokenforExactToken function
-  //swap usdt to dai
-  //TO-DO
-  //erc20 token interface
-  //Approve the uniswap contract
-  //check balance of signer before swap
-  //swap token caling the function
-  //check balance after swap.
-
   
   const DAIAddress = "0x6B175474E89094C44Da98b954EedeAC495271d0F";
   const WETHAddress = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2";
@@ -47,10 +38,7 @@ async function main() {
 
   console.log("Dai balance after Swap:", daiBal2);
 
-  // Second interaction
-
-  const amountOut2 = 2e6;
-  const amountInMax3 = 3e6;
+  
 
   
 
